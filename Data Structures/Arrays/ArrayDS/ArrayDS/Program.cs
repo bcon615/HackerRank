@@ -27,8 +27,7 @@ class Solution
 
         int arrCount = Convert.ToInt32(Console.ReadLine());
 
-        int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp))
-        ;
+        int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
         int[] res = reverseArray(arr);
 
         textWriter.WriteLine(string.Join(" ", res));
